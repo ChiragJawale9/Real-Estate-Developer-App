@@ -9,10 +9,10 @@ import com.reba.entities.User;
 @Repository("userRepository")
 public interface UserRepository extends JpaRepository<User,Integer>{
 	
-	@Query("SELECT u FROM User WHERE u.userId = ?1 AND u.userPassword = ?2")
-	public User loginUser(User user);
+	@Query("SELECT u FROM user u WHERE u.userId = ?1 AND u.userPassword = ?2")
+	public User loginUser(int userId, String password);
 	
-	@Query("SELECT u FROM User WHERE u.userId = ?1")
-	public User logOut(User user);
+	@Query("SELECT u FROM user u WHERE u.userId = ?1")
+	public User logOut(int userId);
 	
 }

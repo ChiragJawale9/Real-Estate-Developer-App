@@ -13,13 +13,13 @@ public class UserServiceImpl implements UserService{
 	UserRepository userRepository;
 
 	@Override
-	public User loginUser(User user) {
-		return userRepository.loginUser(user);
+	public User loginUser(int userId, String password) {
+		return userRepository.loginUser(userId,password);
 	}
 
 	@Override
-	public User logOutUser(User user) {
-		return userRepository.logOut(user);
+	public User logOutUser(int userId) {
+		return userRepository.logOut(userId);
 	}
 	 
 }

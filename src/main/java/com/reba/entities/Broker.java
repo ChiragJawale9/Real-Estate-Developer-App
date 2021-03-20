@@ -44,6 +44,10 @@ public class Broker implements Serializable {
 	public void setUser(User user) {
 		this.user = user;
 	}
+	
+	public int getBrokerId() {
+		return this.user.getUserId();
+	}
 
 	public Set<Property> getProperties() {
 		return this.properties;
