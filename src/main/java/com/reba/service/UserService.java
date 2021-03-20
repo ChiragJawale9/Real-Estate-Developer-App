@@ -1,5 +1,10 @@
 package com.reba.service;
 
-public interface UserService {
+import com.reba.entities.User;
 
+public interface UserService {
+	
+	public User loginUser(User user);
+	
+	public User logOutUser(User user);
 }
