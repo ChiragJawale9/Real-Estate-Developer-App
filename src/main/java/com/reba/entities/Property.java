@@ -62,6 +62,10 @@ public class Property implements Serializable {
 	public int getPropId() {
 		return propId;
 	}
+	
+	public void setPropId(int propId) {
+		this.propId = propId;
+	}
 
 	public String getPropConfig() {
 		return propConfig;
@@ -119,7 +123,7 @@ public class Property implements Serializable {
 		this.city = city;
 	}
 
-	public boolean isStatus() {
+	public boolean getStatus() {
 		return status;
 	}
 
@@ -143,5 +147,6 @@ public class Property implements Serializable {
 		this.broker = broker;
 	}
 
+	
 }
 

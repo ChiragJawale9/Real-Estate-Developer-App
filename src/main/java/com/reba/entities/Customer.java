@@ -40,8 +40,16 @@ public class Customer implements Serializable{
 		this.custName = custName;
 	}
 	
+	public User getUser() {
+		return user;
+	}
+	
 	public void setUser(User user) {
 		this.user = user;
+	}
+	
+	public int getCustId() {
+		return this.user.getUserId();
 	}
 	
 	public Set<Property> getProperties(){

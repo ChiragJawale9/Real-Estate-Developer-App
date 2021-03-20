@@ -4,7 +4,8 @@ import com.reba.entities.User;
 
 public interface UserService {
 	
-	public User loginUser(User user);
+	public User loginUser(int userId, String password);
 	
-	public User logOutUser(User user);
+	public User logOutUser(int userId);
+	
 }
